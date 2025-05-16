@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+</head>
+<body class="">
+    <nav class="flex bg-[#002F29] border-b-4 border-[#F99736] py-10">
+    </nav>
+    <div id="AboutMe" class="flex bg-[#FAF1E0] text-[#002F29]">
+        <div class="p-20">
+            <p class="text-4xl">Hello, I am</p>
+            <h1 class="text-6xl font-bold">Salsabila Nursalima</h1>
+            <br>
+            <p class="text-justify">An active Information Systems student at Syarif Hidayatullah State Islamic University Jakarta, 
+                passionate about developing organizational and collaboration skills. 
+                Highly interested in web development, particularly in front-end and UI/UX design. 
+                Committed to making a positive contribution to organizations 
+                while continuously improving both personal and professional abilities.
+             </p>
+        </div>
+        <div id="profile">
+            <img src="foto diri.jpg" class="rounded-full p-20 mr-20">
+        </div>
+    </div>
+  <div id="Projects" class="p-20 bg-[#002F29]">
+  <div class="flex justify-between">
+    <h1 id="tab-projects" onclick="switchTab('projects')"
+        class="cursor-pointer px-4 py-2 bg-[#002F29] border-4 rounded-xl w-[200px] text-center text-[#FAF1E0] font-medium">
+        My Projects
+    </h1>
+    <h1 id="tab-team" onclick="switchTab('team')"
+        class="cursor-pointer px-4 py-2 bg-[#002F29]  border-4 rounded-xl w-[200px] text-center border-[#F99736] text-[#FAF1E0] font-medium">
+        Project’s Team
+    </h1>
+  </div>
+
+  <div class="">
+    <div id="content-projects" class="box-border min-h-[400px] w-full p-4 border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-xl">
+                <div class="flex space-x-4 overflow-x-auto pb-4">
+                <a><img src="jen.png"></a>      
+                <a><img src="hae.png"></a>    
+                <a><img src="jen.png"></a>    
+                <a><img src="jen.png"></a>            
+                </div>  
+                <a><img src="KeSI-an.png"></a>
+    </div>
+    <div id="content-team" class="hidden box-border min-h-[400px] w-full p-4 border-4 border-[#F99736] bg-[#F99736] rounded-xl">
+        <div class="flex items-start space-x-6">
+            <img src="bree.png" class="bg-[#FAF1E0] w-60 rounded-lg shadow-md mb-10">
+                <h3 class="text-xl font-semibold mb-2">BREE - UI/UX Aplikasi berbasis kesehatan mental</h3>
+                    <p class="text-gray-700">
+                        Poster kedua menggambarkan kolaborasi tokoh bangsa dalam semangat persatuan dan perjuangan, dengan suasana gelap dramatis.
+                    </p>
+        </div>
+        <div class="flex items-start space-x-6">
+            <img src="verymindfull.png" class="bg-[#FAF1E0] w-60 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Poster 2: Perjuangan Tak Pernah Sendirian</h3>
+                    <p class="text-gray-700">
+                        Poster kedua menggambarkan kolaborasi tokoh bangsa dalam semangat persatuan dan perjuangan, dengan suasana gelap dramatis.
+                    </p>
+        </div>
+
+    </div>
+  </div>
+</div>
+     <div id="Skills" class="flex bg-[#002F29] min-h-screen text-[#002F29]">
+        <div class="pl-20 mr-0 flex-1 min-h-full">
+            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl p-6">
+            <h1><span class="font-bold text-4xl">Technical</span> <span class="text-4xl">Skills</span></h1>
+            <ul class="list-disc px-12">
+             <li>Basic Programming (HTML, CSS, Java)</li>
+             <li>Video Editing</li>
+             <li>Image Retouching (ibis paint, canva, picsart)</li>
+            </ul>
+            </div>
+            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl my-8 p-6">
+            <h1><span class="font-bold text-4xl">Interpersonal</span> <span class="text-4xl">Skills</span>
+            <ul class="list-disc px-12">
+             <li>Teamwork and Effective Communication</li>
+             <li>Analytical Thinking </li>
+             <li>Creative Problem-Solving</li>
+            </ul>
+            </div>
+        </div>
+        <div class="flex-1 ml-0 mr-0 pr-20 pl-10 pt-20 justify-center items-center text-sm">
+            <div class="py-10 bg-[#FAF1E0] rounded-md  justify-center items-center">
+                <div id="quote-box" class="box  justify-center items-center">
+                <i class="fas fa-quote-right"></i>
+                <i class="fas fa-quote-left"></i>
+                <p id="quote-text" class="text-center">Loading...</p>
+                <p id="quote-author" class="text-center"></p>
+                </div>
+            </div>
+            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl my-8  text-center p-10 min-h-[280px]">
+                <h1 class=""><span class="font-bold text-4xl">Let's Connect!</span>
+                <br><br>I'd love to hear from you! wheter you have questions, need advice or just want to say hello, feel free to reach out. find me on :
+                </h1> <br>
+                <div class="flex justify-center">
+                <a href="https://www.instagram.com/sa.nursalima?igsh=cXZpcWd5Y2E1N3Ju" class="mx-5 h-10 w-10"><img src="instaram.png"></a>
+                <a href="https://www.linkedin.com/in/salsabila-nursalima-1a50b231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="mx-5 h-1o w-10"><img src="Linkedin.png"></a>  
+                <a href="https://github.com/sanursalima" class="mx-5 h-10 w-10"><img src="github.png"></a>                     
+                </div>
+            </div>
+            
+        </div>
+     </div>
+     <div class="bg-[#FAF1E0] border-t-4 border-[#F99736] text-[#002F29] pt-5 pb-5 text-center">
+        <h1>Copyright © 2025</h1>
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>
