@@ -9,30 +9,31 @@
 <body class="">
     <nav class="flex bg-[#002F29] border-b-4 border-[#F99736] py-10">
     </nav>
-    <div id="AboutMe" class="flex bg-[#FAF1E0] text-[#002F29]">
+    <div id="AboutMe" class="flex flex-col-reverse md:flex-row bg-[#FAF1E0] text-[#002F29] items-center">
         <div class="p-20">
-            <p class="text-4xl">Hello, I am</p>
-            <h1 class="text-6xl font-bold">Salsabila Nursalima</h1>
+            <p class="text-2xl md:text-4xl">Hello, I am</p>
+            <h1 class="text-4xl md:text-6xl font-bold">Salsabila Nursalima</h1>
             <br>
-            <p class="text-justify">An active Information Systems student at Syarif Hidayatullah State Islamic University Jakarta, 
+            <p class="text-justify text-sm md:text-base">An active Information Systems student at Syarif Hidayatullah State Islamic University Jakarta, 
                 passionate about developing organizational and collaboration skills. 
                 Highly interested in web development, particularly in front-end and UI/UX design. 
                 Committed to making a positive contribution to organizations 
                 while continuously improving both personal and professional abilities.
              </p>
         </div>
-        <div id="profile">
+        <div id="profile" cl>
             <img src="foto diri.jpg" class="rounded-full p-20 mr-20">
         </div>
     </div>
-  <div id="Projects" class="p-20 bg-[#002F29]">
-  <div class="flex justify-between">
+
+  <div id="Projects" class="p-8 md:p-20 bg-[#002F29] text-[#FAF1E0]">
+  <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
     <h1 id="tab-projects" onclick="switchTab('projects')"
-        class="cursor-pointer px-4 py-2 bg-[#002F29] border-4 rounded-xl w-[200px] text-center text-[#FAF1E0] font-medium">
+        class="cursor-pointer px-4 py-2 bg-[#002F29] border-4 rounded-xl w-full md:w-[200px] text-center font-medium">
         My Projects
     </h1>
     <h1 id="tab-team" onclick="switchTab('team')"
-        class="cursor-pointer px-4 py-2 bg-[#002F29]  border-4 rounded-xl w-[200px] text-center border-[#F99736] text-[#FAF1E0] font-medium">
+        class="cursor-pointer px-4 py-2 bg-[#002F29] border-4 rounded-xl w-full md:w-[200px] text-center border-[#F99736] text-[#FAF1E0] font-medium">
         Project’s Team
     </h1>
   </div>
@@ -42,74 +43,77 @@
                 <div class="flex space-x-4 overflow-x-auto pb-4">
                 <a><img src="jen.png"></a>      
                 <a><img src="hae.png"></a>    
-                <a><img src="jen.png"></a>    
+                <a><img src="ren.png"></a>    
                 <a><img src="jen.png"></a>            
                 </div>  
                 <a><img src="KeSI-an.png"></a>
     </div>
     <div id="content-team" class="hidden box-border min-h-[400px] w-full p-4 border-4 border-[#F99736] bg-[#F99736] rounded-xl">
-        <div class="flex items-start space-x-6">
-            <img src="bree.png" class="bg-[#FAF1E0] w-60 rounded-lg shadow-md mb-10">
-                <h3 class="text-xl font-semibold mb-2">BREE - UI/UX Aplikasi berbasis kesehatan mental</h3>
-                    <p class="text-gray-700">
-                        Poster kedua menggambarkan kolaborasi tokoh bangsa dalam semangat persatuan dan perjuangan, dengan suasana gelap dramatis.
-                    </p>
+        <div class="flex flex-col md:flex-row items-start bg-[#FAF1E0] rounded-lg shadow-md p-4 gap-4 mb-4">
+            <img src="bree.png" class="w-60">
+                <div class="mt-10 text-[#002F29]">
+                <h3 class="text-lg md:text-xl font-semibold mb-2">BREE – Mental Health App (UI/UX Design)</h3>
+                    <p class="text-700 text-justify">
+                        BREE is a mental health-focused mobile application designed with a clean, minimalist interface to ensure an intuitive and calming user experience. Developed as the final project for the GDG OC program at UIN Jakarta, this app prioritizes accessibility and ease of use.
+                        I contributed as the UX Researcher, conducting user research and defining the user journey, 
+                        while collaborating closely with a designer who crafted the visual elements.
+                    </p>                    
+                </div>
         </div>
-        <div class="flex items-start space-x-6">
-            <img src="verymindfull.png" class="bg-[#FAF1E0] w-60 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-2">Poster 2: Perjuangan Tak Pernah Sendirian</h3>
-                    <p class="text-gray-700">
-                        Poster kedua menggambarkan kolaborasi tokoh bangsa dalam semangat persatuan dan perjuangan, dengan suasana gelap dramatis.
-                    </p>
+        <div class="flex flex-col md:flex-row items-start bg-[#FAF1E0] rounded-lg shadow-md p-4 gap-4">
+            <img src="verymindfull.png" class="w-60">
+                <div class="mt-10 text-[#002F29]"> 
+                <h3 class="text-xl font-semibold mb-2">VeryMindful – A Mental Health Education Website</h3>
+                    <p class="text-700 text-justify">
+                    Aligned with the goal of “Good Health and Well-being,” VeryMindful is a web-based platform designed to be a trusted source of mental health education. More than just providing information, the site aims to empower individuals to take proactive steps in caring for their mental well-being.
+                    This project was developed as the final output of HITLAB under HIMSI’s work program. 
+                    I contributed as the UI designer for the website and was also responsible for developing the learning guide section.
+                    </p>                    
+                </div>
         </div>
-
     </div>
   </div>
 </div>
-     <div id="Skills" class="flex bg-[#002F29] min-h-screen text-[#002F29]">
-        <div class="pl-20 mr-0 flex-1 min-h-full">
-            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl p-6">
-            <h1><span class="font-bold text-4xl">Technical</span> <span class="text-4xl">Skills</span></h1>
-            <ul class="list-disc px-12">
+
+     <div id="Skills" class="flex flex-col md:flex-row bg-[#002F29] min-h-screen text-[#002F29]">
+        <div class="p-6 md:pl-20 md:pr-10 flex-1">
+            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-lg mb-8 p-6">
+            <h1><span class="font-bold text-2xl md:text-4xl">Technical</span> <span class="text-2xl md:text-4xl">Skills</span></h1>
+            <ul class="list-disc px-6 md:px-12">
              <li>Basic Programming (HTML, CSS, Java)</li>
              <li>Video Editing</li>
              <li>Image Retouching (ibis paint, canva, picsart)</li>
             </ul>
             </div>
             <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl my-8 p-6">
-            <h1><span class="font-bold text-4xl">Interpersonal</span> <span class="text-4xl">Skills</span>
-            <ul class="list-disc px-12">
+            <h1><span class="font-bold text-2xl md:text-4xl">Interpersonal</span> <span class="text-2xl md:text-4xl">Skills</span>
+            <ul class="list-disc px-6 md:px-12">
              <li>Teamwork and Effective Communication</li>
              <li>Analytical Thinking </li>
              <li>Creative Problem-Solving</li>
             </ul>
             </div>
         </div>
-        <div class="flex-1 ml-0 mr-0 pr-20 pl-10 pt-20 justify-center items-center text-sm">
-            <div class="py-10 bg-[#FAF1E0] rounded-md  justify-center items-center">
-                <div id="quote-box" class="box  justify-center items-center">
-                <i class="fas fa-quote-right"></i>
-                <i class="fas fa-quote-left"></i>
-                <p id="quote-text" class="text-center">Loading...</p>
-                <p id="quote-author" class="text-center"></p>
+        <div class="flex-1 p-6 md:pr-20 md:my-20">
+                <div class="bg-[#FAF1E0] p-6 rounded-md">
+                    <p id="quote-text" class="text-center text-sm md:text-base">Loading...</p>
+                    <p id="quote-author" class="text-center text-sm md:text-base"></p>
                 </div>
-            </div>
-            <div class="box-border border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-xl my-8  text-center p-10 min-h-[280px]">
-                <h1 class=""><span class="font-bold text-4xl">Let's Connect!</span>
-                <br><br>I'd love to hear from you! wheter you have questions, need advice or just want to say hello, feel free to reach out. find me on :
-                </h1> <br>
-                <div class="flex justify-center">
-                <a href="https://www.instagram.com/sa.nursalima?igsh=cXZpcWd5Y2E1N3Ju" class="mx-5 h-10 w-10"><img src="instaram.png"></a>
+            <div class="border-4 border-[#FAF1E0] bg-[#FAF1E0] rounded-md text-center p-6 text-sm md:text-lg mt-8">
+                <h1 class="font-bold text-2xl md:text-4xl mb-4">Let's Connect!</h1>
+                <p>I'd love to hear from you! wheter you have questions, need advice or just want to say hello, feel free to reach out. find me on :</p>
+                <div class="flex justify-center mt-4 gap-6">
+                <a href="https://www.instagram.com/sa.nursalima?igsh=cXZpcWd5Y2E1N3Ju" class="h-10 w-10"><img src="instaram.png"></a>
                 <a href="https://www.linkedin.com/in/salsabila-nursalima-1a50b231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                class="mx-5 h-1o w-10"><img src="Linkedin.png"></a>  
-                <a href="https://github.com/sanursalima" class="mx-5 h-10 w-10"><img src="github.png"></a>                     
+                class="h-1o w-10"><img src="Linkedin.png"></a>  
+                <a href="https://github.com/sanursalima" class="h-10 w-10"><img src="github.png"></a>                     
                 </div>
             </div>
             
         </div>
      </div>
      <div class="bg-[#FAF1E0] border-t-4 border-[#F99736] text-[#002F29] pt-5 pb-5 text-center">
-        <h1>Copyright © 2025</h1>
+        <h1>Copyright © 2025 | sanursalima</h1>
      </div>
      <script src="main.js"></script>
 </body>
